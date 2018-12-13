@@ -21,6 +21,9 @@
    <li class="col-md">
           <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %>
         </li>
+   <li class="col-md">
+        <%= link_to("Ordenes", orders_path) %> 
+   </li>
    <%else%>
   <li  class="col-md">
       <%= link_to(image_tag("logo.png"), root_path) %>
