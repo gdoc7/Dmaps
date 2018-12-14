@@ -23,6 +23,7 @@ default: &default
   username: gabriel
   password: gdoc0710
   host: localhost
+  port: 5432
 
 development:
   <<: *default

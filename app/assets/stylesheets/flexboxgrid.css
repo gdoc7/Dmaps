@@ -3,7 +3,14 @@
   margin-right: auto;
   margin-left: auto;
 }
-
+.gradiant {
+  background: linear-gradient( 123deg, #afc5c6, #4b72c6);
+}
+.btn{
+  cursor: pointer;
+  padding: 8px 14px;
+  font-size: 1.2em;
+}
 .container-fluid {
   padding-right: 2rem;
   padding-left: 2rem;
