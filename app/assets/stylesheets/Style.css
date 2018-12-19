@@ -2,7 +2,7 @@ body, html {
     height: 100%;
 }
 .bg {
-    background-image: url("http://www.cargocompasssa.co.za/img/CargoCompass-05.jpg");
+    background-image: url("../images/fondo.jpg");
     background-position: center;
     height: 100%;
     background-repeat: no-repeat;
