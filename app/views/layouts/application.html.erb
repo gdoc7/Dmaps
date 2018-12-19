@@ -1,36 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Map</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body class="gradiant" style="font-family: OpenSymbol">
+  <body style="font-family: OpenSymbol" class="bg">
       <%= render "partials/principal" %>
-      <% if user_signed_in? %>
-    <li >
-      <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %>
-    </li>
-    <li >
-      <%= link_to("Ordenes", orders_path) %>
-    </li>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
-  <%else%>
-    <li  >
-      <%= link_to "Iniciar Sesion",new_user_session_path %>
-    </li>
-    <li  >
-      <%= link_to "Crear cuenta", new_user_registration_path %>
-    </li>
-  <%end%>
 
-  <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
 
-    <%= yield %>
   </body>
+  <%= yield %>
 </html>

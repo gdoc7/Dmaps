@@ -1,12 +1,26 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 mb-4 white-text text-center">
-      <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"  style="color: white">Delivery Maps
-      </h1>
-      <hr class="hr-light my-4 wow fadeInDown">
-      </div>
-    </div>
+  <header>
+    <nav class=" ngtn" lang="en">
+      <%= link_to image_tag("logodm.png"), root_path %>
+          <ul>
+            <% if user_signed_in? %>
+              <li>
+                <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete, :style => "color: black"  %>
+              </li>
+              <li >
+                <%= link_to "Ordenes", orders_path,  :style => "color: black" %>
+              </li>
+              <%else %>
 
-  </div>
+                <%- if controller_name != 'sessions' %>
+                  <%= button_to "Iniciar sesión", new_user_session_path , class: "btn"%>
+                <% end -%>
+              <%end%>
+          </ul>
+    </nav>
+  </header>
+
+
+
+
 
 

@@ -1,5 +1,17 @@
 <% if user_signed_in? %>
-  <h1 class="h1-reponsive white-text font-weight-bold  wow fadeInDown"  style="color: white">
-  Bienvenido <%= current_user.name %>
-</h1>
+  <body>
+  <h1 style="color: white">
+    Bienvenido <%= current_user.name %>
+  </h1>
+
+  </body>
+  <%else %>
+  <div class="container">
+    <h1>
+      Empresa lider en el manejo de envios <br>
+      tracking de ordenes<br>
+      atencion personalizada
+    </h1>
+
+  </div>
 <%end%> 
