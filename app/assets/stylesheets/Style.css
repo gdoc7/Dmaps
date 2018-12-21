@@ -1,17 +1,53 @@
-body, html {
+ body, html
+ {
     height: 100%;
-}
-.bg {
-    background-image: url("http://www.cargocompasssa.co.za/img/CargoCompass-05.jpg");
-    background-position: center;
-    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("http://www.cargocompasssa.co.za/img/CargoCompass-05.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    }
+    background-position:center;
+
+}
+.logo{
+    width: 5%;
+    height: 20%;
+    background-repeat: no-repeat;
+}
+ .fa:hover {
+     opacity: 0.7;
+ }
+.list{
+    display: block;
+
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    float: left;
+}
+ .fa {
+     font-size: 30px;
+     width: 30px;
+     text-align: center;
+     text-decoration: none;
+     border-radius: 50%;
+ }
+
+footer{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-image: linear-gradient(white,gray);
+}
+.fot {
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
 
 .ngtn{
-
-    font-family: HelveticaNeueW01-45Ligh,HelveticaNeueW02-45Ligh,HelveticaNeueW10-45Ligh,Helvetica,Arial,sans-serif;
     font-weight: 200;
     font-size: 16px;
     text-transform: none;

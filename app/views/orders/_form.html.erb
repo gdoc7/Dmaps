@@ -14,22 +14,22 @@
 
 
   <div class="field">
-    <%= form.label :address %>
-    <%= form.text_field :address %>
+    <%= form.label "Direccion"%>
+    <%= form.text_field :address, placeholder:"Ej: Caracas, Venezuela"%>
   </div>
 
   <div class="field">
-    <%= form.label :latitude %>
-    <%= form.text_field :latitude %>
+    <%= form.label "Latitud"  %>
+    <%= form.text_field :latitude,  placeholder:"Ej: 10.483425 " %>
   </div>
 
   <div class="field">
-    <%= form.label :longitude %>
-    <%= form.text_field :longitude %>
+    <%= form.label  "Longitud"  %>
+    <%= form.text_field :longitude,  placeholder:"Ej: -10.483425 " %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Crear Orden"%>
   </div>
 <% end %>
 

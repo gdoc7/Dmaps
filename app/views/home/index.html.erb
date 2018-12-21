@@ -1,17 +1,12 @@
-<% if user_signed_in? %>
-  <body>
-  <h1 style="color: white">
-    Bienvenido <%= current_user.name %>
-  </h1>
-
-  </body>
-  <%else %>
-  <div class="container">
-    <h1>
-      Empresa lider en el manejo de envios <br>
-      tracking de ordenes<br>
-      atencion personalizada
+ <% if user_signed_in? %>
+    <body>
+    <h1 style="color: white">
+      Bienvenido <%= current_user.name %>
     </h1>
 
-  </div>
-<%end%> 
+    </body>
+  <%else %>
+  <%end%>
+
+
+
