@@ -1,11 +1,10 @@
 .container-fluid,
 .container {
     text-align: center;
-    margin-right:auto;
-    margin-left: auto ;
-    width: auto;
-    background-color: #459fed;
-    color: white;
+    margin-top: 100px;
+    width: 10%;
+    height: 70%;
+    max-width: 500px;
 
 }
 

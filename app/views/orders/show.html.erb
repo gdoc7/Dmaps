@@ -20,5 +20,21 @@
 <%= link_to 'Regresar', orders_path %>
 
 
-   
+<script type="text/javascript">
+    window.onload = function() {
+        L.mapquest.key = '9c1fwToFBs3KY9mg8dWk6Jbqm69FnwbQ';
 
+        var map = L.mapquest.map('map', {
+
+            center: [50.5, 30.5 ],
+            layers: L.mapquest.tileLayer('map'),
+            zoom: 12
+        });
+
+        map.addControl(L.mapquest.control());
+        L.marker([ <% @hash%>]).addTo(map);
+    }
+</script>
+<body>
+<div id="map" style="width: 70%; height: 300px; text-align: center"></div>
+</body>
