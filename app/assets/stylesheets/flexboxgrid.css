@@ -1,12 +1,14 @@
 .container-fluid,
 .container {
     text-align: center;
-    margin-right:auto;
-    margin-left: auto ;
-    width: auto;
-    background-color: #459fed;
-    color: white;
-
+    margin-top: fill;
+    width: 10%;
+    height: 35%;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: transparent;
+    border: 1px solid #eff1f2;
+    border-radius: 5% ;
 }
 
 .container-fluid {
