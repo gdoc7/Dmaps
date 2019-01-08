@@ -10,7 +10,9 @@ gem 'geocoder'
 gem 'jquery-rails'
 gem 'boostrap-sass'
 gem 'gmaps4rails'
-
+gem 'rspec-rails'
+gem 'factory_girl_rails', '~> 4.7'
+gem 'ffaker', '~> 2.10'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
