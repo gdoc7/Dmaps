@@ -1,4 +1,5 @@
-
+<div  class=" row center-md">
+<div class="col-xs-6">
 <%= form_with(model: order, local: true) do |form| %>
   <% if order.errors.any? %>
     <div id="error_explanation">
@@ -15,21 +16,23 @@
 
   <div class="field">
     <%= form.label "Direccion"%>
-    <%= form.text_field :address, placeholder:"Ej: Caracas, Venezuela"%>
+    <%= form.text_field :address, placeholder:"Ej: Caracas, Venezuela", class: "celdita" , style: "width:100%;" %>
   </div>
 
   <div class="field">
     <%= form.label "Latitud"  %>
-    <%= form.text_field :latitude,  placeholder:"Ej: 10.483425 " %>
+    <%= form.text_field :latitude,  placeholder:"Ej: 10.483425 ", class: "celdita" , style: "width:100%;" %>
   </div>
 
   <div class="field">
     <%= form.label  "Longitud"  %>
-    <%= form.text_field :longitude,  placeholder:"Ej: -10.483425 " %>
+    <%= form.text_field :longitude,  placeholder:"Ej: -10.483425 ", class: "celdita" , style: "width:100%;"  %>
   </div>
 
-  <div class="actions">
-    <%= form.submit "Crear Orden"%>
+  <div class="actions" style="padding:15px;">
+    <%= form.submit "Crear/Editar Orden"%>
   </div>
+</div>
+</div>
 <% end %>
 
