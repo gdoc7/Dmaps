@@ -3,11 +3,13 @@
       <%= link_to image_tag("logodm.png"), root_path  %>
           <ul style="list-style: none">
             <% if user_signed_in? %>
-              <li  class="list" >
-                <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete , :style => "color:white" %>
+              <li  class="list" >		
+		<i class="fa fa-fw fa-user"></i>
+                <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete , :style => "color:black; padding-right:5px;" %>
               </li>
               <li class="list" >
-                <%= link_to "Ordenes", orders_path, :style => "color:white"  %>
+               <a href="orders" style="color: black"><i class="fa fa-fw fa-globe"></i> Ordenes
+		</a>
               </li>
               <%else %>
               <% if current_page?(root_path)%>
