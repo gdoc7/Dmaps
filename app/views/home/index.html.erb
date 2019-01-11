@@ -1,11 +1,20 @@
- <% if user_signed_in? %>
+<div  class=" row center-md">
+<div class="col-xs-10">
+<% if user_signed_in? %>
     <body>
-    <h1 style="color: white">
+    <h1 style="color: black">
       Bienvenido <%= current_user.name %>
     </h1>
-
     </body>
-  <%else %>
+<div style="padding:15px;">
+<span>D-maps.com es una empresa dedicada en el envio de paquetes, mapeo, busqueda y seguimiento del mismo. Hacemos que tu experiencia para el seguimiento de paquetes sea el mas comodo y visualmente agradable.</span>
+</div>
+<div style="padding:15px;">
+<a href="orders" style="color: black; padding-top:15px;" class="btn">Ver Ordenes</a>
+</div>
+<%else %>
+</div>
+</div>
   <%end%>
 
 
